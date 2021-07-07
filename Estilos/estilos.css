@@ -1,6 +1,8 @@
 body {
     margin : 0;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
+    background: radial-gradient(#333,#000);
 }
 
 header .contenedor{
@@ -33,11 +35,8 @@ header .contenedor p {
     background: rgba(255, 0, 0, 0.5);
 }
 
-.contenedor{
-    max-width: 1280px;
-    width: 90%;
-    margin: auto;
-}
+
+/* Inicio */
 
 #inicio {
     position: relative;
@@ -52,7 +51,7 @@ header .contenedor p {
 
 #inicio .hojas{
     position: absolute;
-    width: 100%;
+    width: 95%;
     height: 100%;
     top:0;
     left: 0;
@@ -127,6 +126,22 @@ header .contenedor p {
     text-align: center;
 }
 
+#inicio a{
+    background: rgba(255, 0, 0, 0.4);
+    padding: 5px 20px;
+    border-radius: 8px;
+    animation: boton 4s linear infinite;
+}
+@keyframes boton{
+    0% {
+        box-shadow:0 0 10px rgba(255, 0, 0, 0.5);
+    }70% {
+        box-shadow:0px 0px 70px rgba(255, 0, 0);
+    }100% {
+        box-shadow:0 0 10px rgba(255, 0, 0, 0.5);
+    }
+}
+
 #contenedor-titulo-flex{
     display: flex;
     justify-content: center;
@@ -188,9 +203,18 @@ h3 {
     width: 35%;
 }
                
-/*Clasificación de los Sistemas Operativos
+/*Habilidades
 */
 
+#clasificacion{
+    position: relative;
+    width: 90%;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+    
 .contenedor-clasificacion{
     display: flex;
     justify-content: space-around;
