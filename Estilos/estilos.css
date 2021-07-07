@@ -39,33 +39,93 @@ header .contenedor p {
     margin: auto;
 }
 
-
-header {
+#inicio {
+    position: relative;
+    width: 100%;
     height: 100vh;
-    background-size: cover;
-    transition: 5s;
-
-    animation: animate 30s ease-in-out infinite ;
+    background: radial-gradient(#333,#000);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes animate{
-    0%,100%{
-        background-image:url(../imagenes/bg1.jpg);
+#inicio .hojas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    pointer-events: none;
+}
+#inicio .hojas div{
+    position: absolute;
+    display: block;
+}
+#inicio .hojas div:nth-child(1){
+    left: 0%;
+    animation: animate 15s linear infinite;
+    animation-delay: -7s;
+}
+#inicio .hojas div:nth-child(2){
+    left: 20%;
+    animation: animate 17s linear infinite;
+    animation-delay: -3s;
+}
+#inicio .hojas div:nth-child(3){
+    left: 40%;
+    animation: animate 18s linear infinite;
+    animation-delay: -3s;
+}
+#inicio .hojas div:nth-child(4){
+    left: 70%;
+    animation: animate 20s linear infinite;
+    animation-delay: -1s;
+}
+#inicio .hojas div:nth-child(5){
+    left: 90%;
+    animation: animate 20s linear infinite;
+    animation-delay: -4s;
+}
+.hojas2{
+    transform: scale(1.7) rotateY(180deg);
+    filter: blur(2px);
+}
+.hojas3{
+    transform: scale(0.8) rotateX(180deg);
+    filter: blur(5px);
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10%{
+        opacity: 1;
+
     }
     20%{
-        background-image:url(../imagenes/bg2.jpg);
+        transform: translateX(-20px) rotate(45deg);
     }
     40%{
-        background-image:url(../imagenes/bg6.jpg);
+        transform: translateX(-20px) rotate(90deg);
     }
     60%{
-        background-image: url(../imagenes/bg4.jpg);
+        transform: translateX(20px) rotate(180deg);
     }
     80%{
-        background-image:url(../imagenes/bg5.jpg);
+        transform: translateX(-20px) rotate(180deg);
+    }
+    100%{
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
     }
 }
 
+.contenedor-portada{
+    text-align: center;
+}
 
 #contenedor-titulo-flex{
     display: flex;
