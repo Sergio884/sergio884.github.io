@@ -89,10 +89,12 @@ header .contenedor p {
 .hojas2{
     transform: scale(1.7) rotateY(180deg);
     filter: blur(2px);
+    z-index: 2;
 }
 .hojas3{
     transform: scale(0.8) rotateX(180deg);
     filter: blur(5px);
+    z-index: 4;
 }
 @keyframes animate {
     0%{
@@ -124,6 +126,7 @@ header .contenedor p {
 
 .contenedor-portada{
     text-align: center;
+    z-index: 1;
 }
 
 #inicio a{
@@ -180,31 +183,177 @@ header h2 {
     padding: 14px 24px;
 }
 
+
+
+
+
+
 /* Sobre mi */
+#sobre-mi{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#sobre-mi .columna{
+    position: relative;
+    display: flex;
+    margin: 0 0 !important;
+    padding: 0px 0px !important;
+    width: 100%;
+    left: -30%;
+    top: -90%;
+    transform: rotate(-20deg);
+}
+
+#sobre-mi p{
+    color: rgb(0, 0, 0) !important;
+    font-size: 70px;
+    margin: 0 0;
+    padding: 2px 10px;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    transition: 2s;
+    font-family: p;
+}
+#sobre-mi p:hover{
+    color: rgb(153, 8, 8) !important;
+    text-shadow: 0 0 100px rgb(255, 102, 0);
+    transform: translateX(25%);
+    transition: 0.4s;
+}
+
+/*
+#sobre-mi .columna div{
+    animation: animate1 10s linear infinite;
+    animation-delay: -5s;
+}
+@keyframes animate1{
+    0%{
+        transform: translateX(100%);
+    }100%{
+        transform: translateX(-100%);
+    }
+}
+*/
+.carta-sobre-mi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.carta-sobre-mi .carta{
+    z-index: 1;
+    position: relative;
+    width: 650px;
+    height: 360px;
+    border-radius: 20px;
+    display: flex;
+}
+.carta .circulo{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.carta .circulo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(182,38,194);
+background: linear-gradient(45deg, rgba(32,11,61,0.865983893557423) 23%, rgba( 163,17,17,0.7259278711484594) 50%, rgba(32,11,61,0.865983893557423) 77%);
+    clip-path: circle(120px at center);
+    transition: 1s;
+}
+
+.carta:hover .circulo:before{
+    background: rgb(163,17,17);
+background: linear-gradient(90deg, rgba(163,17,17,0.7259278711484594) 30%, rgba(32,11,61,0.865983893557423) 70%);
+    clip-path: circle(700px at center);
+    border-radius: 30px;
+}
+
+
+
+.carta img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 1.5s;
+}
+.carta:hover img{
+    left: 75%;
+    height: 400px;
+}
+
+.carta .contenido h6{
+    color: #fff !important;
+    font-size: 16px !important;
+    margin: 0;
+}
+
+.carta .contenido{
+    position: relative;
+    width: 60%;
+    padding: 30px 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.carta:hover .contenido{
+    visibility: visible;
+    transition: 5s;
+    opacity: 1;
+}
+
+@media (max-width:800px){
+    .carta{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin:10px; 
+    }
+    .carta:hover{
+        height: 600px;
+    }
+    .carta .contenido{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+    .carta:hover img{
+        top:70%;
+        left: 50%;
+        height: 350px !important;
+    }
+}
+
+/*Habilidades
+*/
 
 h3 {
     text-align: center;
     font-size: 55px;
     font-weight: bold;
+    color: #fff;
+    z-index: 2;
+    pointer-events: none;
 }
 
-#sobre-mi .contenedor-sobreMi {
-    display: flex;
-    justify-content:center
-}
-
-#sobre-mi img {
-    margin-right: 40px;
-    padding-top: 20px;
-}
-    
-#sobre-mi .texto {  
-    margin-left: 50px;   
-    width: 35%;
-}
-               
-/*Habilidades
-*/
 
 #clasificacion{
     position: relative;
@@ -553,7 +702,7 @@ header nav {
     top: 83px;
     left: 0;
     height: 268px;
-    background: #08d0f3cb;
+    background: #f3080855;
     width: 100%;
     display: none;
     margin-top: -20px;
