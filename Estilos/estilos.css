@@ -217,11 +217,10 @@ header h2 {
     font-family: 'Poppins', sans-serif;
     user-select: none;
     transition: 2s;
-    font-family: p;
 }
 #sobre-mi p:hover{
-    color: rgb(153, 8, 8) !important;
-    text-shadow: 0 0 100px rgb(255, 102, 0);
+    color: rgb(110, 6, 6) !important;
+    text-shadow: 0 0 100px rgba(255, 0, 0, 0.712);
     transform: translateX(25%);
     transition: 0.4s;
 }
