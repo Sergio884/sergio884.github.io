@@ -364,6 +364,88 @@ background: linear-gradient(90deg, rgba(13,16,73,0.9108018207282913) 50%, rgb(3,
     }
 }
 
+
+
+
+
+
+
+
+/* Mis proyectos */
+#mis-proyectos{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#mis-proyectos img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#mis-proyectos .proyecto{
+    position: relative;
+    height: 460px;
+    width: 328px;    
+    border-radius: 15px;
+    background: rgb(157,0,0);
+background: linear-gradient(45deg, rgba(157,0,0,1) 25%, rgba(18,8,89,1) 100%);
+}
+
+#mis-proyectos .contenido{
+    margin-left: 10px;
+}
+
+#mis-proyectos a{
+    position: absolute;
+    background: #f30808af;
+    border-radius: 10px;
+    padding: 5px 15px;
+    left: 10px;
+    bottom: 10px;
+    transition: 0.5s;
+}
+#mis-proyectos a:hover{
+    font-size: 19px;
+}
+#mis-proyectos p{
+    color: #fff;
+    margin-top: 0px;
+}
+#mis-proyectos h4{
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-container h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  .swiper-slide {
+    width: 300px !important;
+    filter: blur(4px);
+  }
+
+  .swiper-slide-active{
+      filter: blur(0px);
+  }
+
+
+
+
+
+
+
+
 /*Habilidades
 */
 

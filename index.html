@@ -23,7 +23,7 @@
                         <ul class="listaMenu">
                             <li><a href="#sobre-mi">Sobre mí</a></li>
                             <li><a href="#clasificacion">Habilidades</a></li>
-                            <li><a href="#blog">Mis proyectos</a></li>
+                            <li><a href="#mis-proyectos">Mis proyectos</a></li>
                             <li><a href="#contacto">Contacto</a></li>
                         </ul>
                     </nav>
@@ -465,8 +465,60 @@
             </section>
 
             <section id="mis-proyectos">
-            </section>
+                <div class="swiper-container">
+                    <h3>Mis proyectos</h3>
+                    <div class="swiper-wrapper">                      
+
+                        <div class="swiper-slide">
+                            <div class="proyecto">
+                                <div class="publicacion">
+                                    <img src="imagenes/vfd.gif" height="240px" >
+                                    <div class="contenido">
+                                    <h4>Python & Tkinter</h4>
+                                    <p>Un Semáforo constituye una serie de opciones elementales 
+                                      para poder restringir o garantizar el acceso a los recursos en un Sistema Operativo</p>
+                                    <a href="https://1984.lsi.us.es/wiki-ssoo/index.php/Sem%C3%A1foros" target="_blank">VER MÁS →</a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="proyecto">
+                                <div class="publicacion">
+                                    <img src="imagenes/ipn.gif" height="151px">
+                                    <div class="contenido">
+                                        <h4>HTML,CSS,PHP & JavaScript</h4>
+                                        <p>Un socket, es un método para la comunicación entre un programa del cliente
+                                        y un programa del servidor en una red este nos sirve para...</p>
+                                        <a href="https://www.youtube.com/watch?v=M8Vdd0MSqdU&t=989s" target="_blank">VER MÁS →</a>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>    
+            </section>    
             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                  effect: 'coverflow',
+                  grabCursor: true,
+                  centeredSlides: true,
+                  slidesPerView: 'auto',
+                  coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2,
+                    slideShadows: true,
+                  },
+                  loop:true
+                });
+            </script>
+
+
 
             <section id="blog">
                 <div class="contenedor">
