@@ -388,7 +388,7 @@ background: linear-gradient(90deg, rgba(13,16,73,0.9108018207282913) 50%, rgb(3,
 
 #mis-proyectos .proyecto{
     position: relative;
-    height: 460px;
+    height: 420px;
     width: 328px;    
     border-radius: 15px;
     background: rgb(157,0,0);
@@ -397,6 +397,7 @@ background: linear-gradient(45deg, rgba(157,0,0,1) 25%, rgba(18,8,89,1) 100%);
 
 #mis-proyectos .contenido{
     margin-left: 10px;
+    margin-right: 5px;
 }
 
 #mis-proyectos a{
