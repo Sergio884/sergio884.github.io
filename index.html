@@ -529,6 +529,38 @@
                 });
             </script>
 
+            <section id="contacto">
+                <h3>¡Que esperas!</h3>                
+                    <div class="reloj">
+                        <div class="hora">
+                            <div class="hr" id="hr"></div>
+                        </div>
+                        <div class="minuto">
+                            <div class="min" id="min"></div>
+                        </div>
+                        <div class="segundo">
+                            <div class="sec" id="sec"></div>
+                        </div>
+                    </div>
+            </section>
+            <script type="text/javascript">
+                const deg = 6;
+                const hr = document.querySelector('#hr');
+                const min = document.querySelector('#min');
+                const sec = document.querySelector('#sec');
+
+                setInterval(()=>{
+                    let day = new Date();
+                let hh = day.getHours() * 30;
+                let mm = day.getMinutes() * deg;
+                let ss = day.getSeconds() * deg;
+                
+                hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+                min.style.transform = `rotateZ(${mm}deg)`;
+                sec.style.transform = `rotateZ(${ss}deg)`;
+                });
+            </script>
+
         </main>
 
         <footer>

@@ -573,19 +573,6 @@ h3 {
 
 
 
-/*Mis trabajos*/
-button.owl-prev {
-    font-size: 40px !important;
-}
-
-button.owl-next {
-    font-size: 40px !important;
-}
-
-span {
-    color:#57b3fa;
-}
-
 /*Por que*/
 
 .contenedor-por-que{
@@ -613,126 +600,103 @@ span {
     line-height: 31px;
 }
 
-/*Blog
-
-#blog .contenedor-blog {
-    display: flex;
-    justify-content: space-around;
-}
-
-#blog .publicacion {
-    width: 30%;
-    box-shadow: 4px 4px 15px 1px rgba(0,0,0,0.42);
-}
-
-#blog img {
-    width: 100%;
-}
-
-#proyectos .contenedor-proyectos{
-    display: flex;
-    justify-content: space-around;
-}
-
-#proyectos .contenedor{
-    width: 90%;
-    background:#fff;
-}
-
-#proyectos .contenedor-proyecto{
-    width: 38%;
-    height: 460px;
-    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.45);
-}
-
-.contenedor-proyecto a {
-    background: rgb(13, 163, 250);
-    border-radius: 7px;
-    color: white;
-    padding: 5px 10px 5px 10px;
-    margin-left:20px;
-}
-
-
-#proyectos .contenedor-img1{
-    height: 255px;
-    background-image: url(../imagenes/ipnFull.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    transition: 2s ease background-image;
-}
-
-
-.contenedor-img1:hover{
-    background-image: url(../imagenes/ipn.gif) !important;
-}
 
 
 
 
-#proyectos .contenedor-img2{
-    height: 255px;
-    background-image: url(../imagenes/vfd.jpg);
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: top;
-    transition: 2s ease background-image;
-}
-
-
-.contenedor-img2:hover{
-    background-image: url(../imagenes/vfd.gif) !important;
-}
-
-#proyectos p,h2,a{
-    padding-left: 20px;
-}
-
-
-#blog .contenido {
-    padding: 20px;
-}
-
-#blog h4 {
-    font-size: 23px;
-    margin-bottom: 15px;
-    margin-top: 0;
-}
-
-#blog a {
-    background: rgb(13, 163, 250);
-    border-radius: 7px;
-    color: white;
-    padding: 5px 10px 5px 10px;
-}
-
-
-/*Que esperas*/
-
-#que-esperas {
-    padding: 20px 0 50px 0;
-    margin-top: 40px;
-    text-align: center;
-    background: rgb(78,255,250);
-    background: linear-gradient(to bottom, #DE47FF 0%, #14FBFF 100%);
-}
-
-
-#que-esperas a {
-    font-size: 14px;
-    color: #fff;
-    background: rgba(0, 174, 255, 1);
-    padding: 14px 24px;
-}
-
-#que-esperas h3 {
-    font-size: 28px;
-    color: #fff;
-    padding: 0 0 20px 0;
-}
 
 /*Contacto*/
+#contacto{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.reloj{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imagenes/reloj.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px solid #161515;
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.3),
+                inset 0 15px 15px rgba(0,0,0,0.3);
+}
+.reloj::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10;
+}
+.reloj .hora,
+.reloj .minuto,
+.reloj .segundo{
+    position: absolute;
+}
+
+.reloj .hora, .hr{
+    width: 160px;
+    height: 160px;
+}
+.reloj .minuto, .min{
+    width: 190px;
+    height: 190px;
+}
+.reloj .segundo, .sec{
+    width: 230px;
+    height: 230px;
+}
+
+.hr,.min,.sec{
+    display:flex;
+    justify-content: center;
+  /*  align-items: center;*/
+  position: absolute;
+  border-radius: 50%;
+}
+.hr::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #ff105e;
+    z-index: 2;
+    border-radius: 6px;
+}
+
+.min::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #fff;
+    z-index: 3;
+    border-radius: 6px;
+}
+.sec::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 108px;
+    background: #fff;
+    z-index: 4;
+    border-radius: 6px;
+}
+
+
+
+
+/*Contacto
 
 
 #contacto form {
