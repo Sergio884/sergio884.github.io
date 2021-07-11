@@ -332,7 +332,7 @@ background: linear-gradient(90deg, rgba(13,16,73,0.9108018207282913) 50%, rgb(3,
 
     .carta:hover{
         height:550px;
-        top: 93px;
+        top: 10px;
     }
     .carta .contenido{
         width: 100%;
@@ -359,7 +359,7 @@ background: linear-gradient(90deg, rgba(13,16,73,0.9108018207282913) 50%, rgb(3,
         margin-top: 5px;
     }
     .carta .circulo{
-        top: -40px !important;
+        top: -50px !important;
         height: 550px;
     }
 }
@@ -614,6 +614,11 @@ h3 {
     height: 100vh;
 }
 
+#contacto h3{
+    margin-top: 0;
+    padding-top: 0;
+}
+
 .reloj{
     width: 350px;
     height: 350px;
@@ -772,32 +777,6 @@ footer img:hover {
     transition: 0.5s;
 }
 
-#whatsapp {
-    position: fixed;
-    top: 80%;
-    right: 1%;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-#contacto, #mis-trabajos, #sobre-mi {
-    padding: 70px 0;
-}
-
-#sobre-mi {
-    padding: 10px 0px 40px 0;
-}
-
-#por-que {
-    padding: 25px 0 20px 0;
-}
-
-#blog , #clasificacion{
-    padding: 20px;
-}
-
 .menu-icon {
     display: none;
 }
@@ -923,6 +902,10 @@ header {
  }
 
 .computadora {
+    display: none;
+}
+
+#sobre-mi .columna{
     display: none;
 }
 
