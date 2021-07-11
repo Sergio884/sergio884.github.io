@@ -389,8 +389,9 @@ background: linear-gradient(90deg, rgba(13,16,73,0.9108018207282913) 50%, rgb(3,
 #mis-proyectos .proyecto{
     position: relative;
     height: 420px;
-    width: 328px;    
+    width: 324px;    
     border-radius: 15px;
+    left: -4%;
     background: rgb(157,0,0);
 background: linear-gradient(45deg, rgba(157,0,0,1) 25%, rgba(18,8,89,1) 100%);
 }
@@ -432,13 +433,61 @@ background: linear-gradient(45deg, rgba(157,0,0,1) 25%, rgba(18,8,89,1) 100%);
     margin-bottom: 20px;
 }
   .swiper-slide {
-    width: 300px !important;
-    filter: blur(4px);
+    width: 304px !important;
+    filter: blur(2px);
   }
 
   .swiper-slide-active{
+    filter: blur(0px);
+}
+
+  .swiper-slide-active .contenedor-proyecto-ipn{
       filter: blur(0px);
+      background-image: url(../imagenes/ipn.gif) !important;
   }
+
+#mis-proyectos .contenedor-proyecto-ipn{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 152px;
+    background-image: url(../imagenes/ipnFull.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: 2s ease background-image;
+}
+.swiper-slide-active .contenedor-proyecto-trobify{
+    filter: blur(0px);
+    background-image: url(../imagenes/trobify.gif) !important;
+}
+
+#mis-proyectos .contenedor-proyecto-trobify{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 151px;
+  background-image: url(../imagenes/trobify.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 2s ease background-image;
+}
+
+.swiper-slide-active .contenedor-proyecto-vfd{
+    filter: blur(0px);
+    background-image: url(../imagenes/vfd.gif) !important;
+}
+
+#mis-proyectos .contenedor-proyecto-vfd{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 250px;
+  background-image: url(../imagenes/vfd.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 2s ease background-image;
+}
+
 
 
 
@@ -564,7 +613,7 @@ span {
     line-height: 31px;
 }
 
-/*Blog*/
+/*Blog
 
 #blog .contenedor-blog {
     display: flex;
@@ -657,6 +706,7 @@ span {
     color: white;
     padding: 5px 10px 5px 10px;
 }
+
 
 /*Que esperas*/
 
