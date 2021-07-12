@@ -456,12 +456,12 @@ background: linear-gradient(45deg, rgba(157,0,0,1) 25%, rgba(18,8,89,1) 100%);
     background-position: top;
     transition: 2s ease background-image;
 }
-.swiper-slide-active .contenedor-proyecto-trobify{
-    filter: blur(0px);
-    background-image: url(../imagenes/trobify.gif) !important;
-}
+
+
+
 
 #mis-proyectos .contenedor-proyecto-trobify{
+  z-index: 4 !important;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   height: 151px;
@@ -471,6 +471,20 @@ background: linear-gradient(45deg, rgba(157,0,0,1) 25%, rgba(18,8,89,1) 100%);
   background-position: top;
   transition: 2s ease background-image;
 }
+
+.swiper-slide .videoTrobify{
+    display: none;
+}
+.swiper-slide-active .videoTrobify{
+    filter: blur(0px);
+    display: block;
+    height: 151px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
 
 .swiper-slide-active .contenedor-proyecto-vfd{
     filter: blur(0px);
