@@ -486,15 +486,21 @@ background: linear-gradient(45deg, rgba(157,0,0,1) 25%, rgba(18,8,89,1) 100%);
 
 
 
-.swiper-slide-active .contenedor-proyecto-vfd{
+.swiper-slide .videoVFD{
+    display: none;
+}
+.swiper-slide-active .videoVFD{
     filter: blur(0px);
-    background-image: url(../imagenes/vfd.gif) !important;
+    display: block;
+    height: 200px !important;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 #mis-proyectos .contenedor-proyecto-vfd{
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  height: 250px;
+  height: 200px;
   background-image: url(../imagenes/vfd.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
