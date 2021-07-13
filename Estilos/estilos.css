@@ -324,7 +324,7 @@ background: linear-gradient(90deg, rgba(13,16,73,0.9108018207282913) 50%, rgb(3,
     .carta{
         position: relative;
         width: auto;
-        max-width: 350px;
+        max-width: 450px;
         max-height: 550px;
         align-items: flex-start;
         margin:10px; 
@@ -345,15 +345,15 @@ background: linear-gradient(90deg, rgba(13,16,73,0.9108018207282913) 50%, rgb(3,
     }
 
     .carta img{
-        width: 210px !important;
+        width: 275px !important;
         transition: 1.5s;
         top: 60%;
     }
     .carta:hover img{
         top:65%;
         left: 50%;
-        height: 320px !important;
-        width: 200px !important;
+        height: 330px !important;
+        width: 270px !important;
     }
     #sobre-mi h3{
         margin-top: 5px;
