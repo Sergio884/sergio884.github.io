@@ -5,6 +5,33 @@ body {
     background: radial-gradient(#333,#000);
 }
 
+
+/*****Whatsapp*******/
+#whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+#whatsapp img{
+    height: 70px;
+    transition: 0.6s;
+}
+#whatsapp img:hover{
+    transform: scale(1.3);
+}
+@media (max-width:380px){
+    #whatsapp{
+        bottom: 2px;
+        right: 2px;
+    }
+}
+
+
+
+
+
+
 header .contenedor{
     display: flex;
     justify-content: space-between;
@@ -939,16 +966,6 @@ header nav ul li {
 
 #contacto input[type="text"], input[type="email"]  {
     width: 100%;
-}
-
-#whatsapp {
-    position: fixed;
-    top: 90%;
-    right: 1%;
-}
-
-#whatsapp img {
-    width: 50px;
 }
 
 #blog .contenedor-blog {
