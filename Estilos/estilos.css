@@ -523,6 +523,31 @@ background: linear-gradient(45deg, rgba(157,0,0,1) 25%, rgba(18,8,89,1) 100%);
 }
 
 
+#mis-proyectos .contenedor-proyecto-KSInversiones{
+  z-index: 4 !important;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 151px;
+  background-image: url(../imagenes/KSInversiones.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 2s ease background-image;
+}
+
+.swiper-slide .videoKSInversiones{
+    display: none;
+}
+.swiper-slide-active .videoKSInversiones{
+    filter: blur(0px);
+    display: block;
+    height: 151px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
 
 
 .swiper-slide .videoVFD{
