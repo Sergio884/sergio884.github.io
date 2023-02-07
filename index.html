@@ -2,38 +2,60 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="Estilos/estilos.css">
+        <link rel="stylesheet" href="estilos/inicio.css">
+        <link rel="stylesheet" href="estilos/proyectos.css">
+        <link rel="stylesheet" href="estilos/sobre-mi.css">
+        <link rel="stylesheet" href="estilos/whatsapp.css">
+        <link rel="stylesheet" href="estilos/contacto.css">
+        <link rel="stylesheet" href="estilos/footer.css">
+        <link rel="stylesheet" href="estilos/navbar.css">
+        <link rel="stylesheet" href="estilos/habilidades.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="owl/owl.carousel.min.css">
-        <link rel="stylesheet" href="owl/owl.theme.default.min.css">
         <link rel="icon" href="imagenes/s.ico">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://use.fontawesome.com/3903c9d7fd.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
         <title>Sergio Valle</title>
         <meta name="viewport" content="width=device-width,user-scalable=no">
     </head>
 
     <body>
-
-        <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5217321017129&text=Hola%20Sergio%20he%20visto%20tu%20portafolio%20y%20me%20interesa%20negociar%20contigo." target="_blank">            
+        <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5215587355557&text=Hola%20Sergio%20he%20visto%20tu%20portafolio%20y%20me%20interesa%20negociar%20contigo." target="_blank">            
             <img src="imagenes/whatsapp.png">
         </a>
 
         <header>
-            <div class="menu">
-                <div class="contenedor">
-                    <p>Edilberto Sergio</p>
-                    <img class="menu-icon" src="imagenes/menu.png">
-                    <nav>
-                        <ul class="listaMenu">
-                            <li><a href="#sobre-mi">Sobre mí</a></li>
-                            <li><a href="#clasificacion">Habilidades</a></li>
-                            <li><a href="#mis-proyectos">Mis proyectos</a></li>
-                            <li><a href="#contacto">Contacto</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <ul class="menu">
+                <a href="#inicio">
+                    <li class="menu_list">
+                        <span class="front fas fa-home"></span>
+                        <a href="#inicio" class="side">INICIO</a>
+                    </li>
+                </a>
+                <a href="#sobre-mi">
+                    <li class="menu_list">
+                        <span class="front fas fa-info"></span>
+                        <a href="#sobre-mi" class="side">SOBRE MI</a>
+                    </li>
+                </a>
+                <a href="#proyectos">
+                    <li class="menu_list">
+                        <span class="front fas fa-briefcase"></span>
+                        <a href="#proyectos" class="side">EXPERIENCIA</a>
+                    </li>
+                </a>                
+                <a href="#habilidades">
+                    <li class="menu_list">
+                        <span class="front fas fa-code"></span>
+                        <a href="#habilidades" class="side">HABILIDADES</a>
+                    </li>
+                </a>
+                <a href="#contacto">
+                    <li class="menu_list">
+                        <span class="front fas fa-paper-plane"></span>
+                        <a href="#contacto" class="side">CONTACTO</a>
+                    </li>
+                </a>
+            </ul>
             <section id="inicio">
                 <div class="contenedor-portada">
                     <h1>Edilberto Sergio Valle Ortiz</h1>
@@ -41,18 +63,18 @@
                     <a href="#sobre-mi">Comenzar</a>
                 </div>
                 <div class="hojas">
-                    <div><img src="/imagenes/hoja1.png"></div>
-                    <div><img class="computadora" src="/imagenes/hoja2.png"></div>
-                    <div><img src="/imagenes/hoja3.png"></div>
-                    <div><img class="computadora" src="/imagenes/hoja4.png"></div>
-                    <div><img class="computadora" src="/imagenes/hoja1.png"></div>
+                    <div><img src="/imagenes/fondo/lenguajes/1.png" width="40px"></div>
+                    <div><img class="computadora" src="/imagenes/fondo/lenguajes/2.png" width="40px"></div>
+                    <div><img src="/imagenes/fondo/lenguajes/3.png" width="40px"></div>
+                    <div><img class="computadora" src="/imagenes/fondo/lenguajes/4.png" width="40px"></div>
+                    <div><img src="/imagenes/fondo/lenguajes/5.png" width="40px"></div>
                 </div>
                 <div class="hojas hojas2">
-                    <div><img src="/imagenes/hoja1.png"></div>
-                    <div><img class="computadora" src="/imagenes/hoja2.png"></div>
-                    <div><img class="computadora" src="/imagenes/hoja3.png"></div>
-                    <div><img src="/imagenes/hoja4.png"></div>
-                    <div><img class="computadora" src="/imagenes/hoja1.png"></div>
+                    <div><img src="/imagenes/fondo/lenguajes/1.png" width="60px"></div>
+                    <div><img src="/imagenes/fondo/lenguajes/3.png" width="60px"></div>
+                    <div><img class="computadora" src="/imagenes/fondo/lenguajes/2.png" width="60px"></div>
+                    <div><img src="/imagenes/fondo/lenguajes/4.png" width="60px"></div>
+                    <div><img class="computadora" src="/imagenes/fondo/lenguajes/5.png" width="60px"></div>
                 </div>
                 <div class="hojas hojas3">
                     <div><img src="/imagenes/particula.png" width="40px"></div>
@@ -63,9 +85,13 @@
                 </div>
             </section>
         </header>
-        <main>
-            <section id="sobre-mi">
-              <h3>Sobre mi</h3>
+    <main>
+        <section id="sobre-mi">
+            <div class="contenedor">
+                <div class="encabezado">
+                    <h2>¿QUIEN SOY?</h2>
+                    <p>Edilberto Sergio Valle Ortiz</p>
+                </div>
                 <div class="carta-sobre-mi">
                     <div class="carta">
                         <div class="circulo"></div>
@@ -74,249 +100,153 @@
                         </div>
                         <img src="/imagenes/yoL.png" alt="">
                     </div>
-                </div>                  
-            </section>
-<!--
-            <section id="clasificacion">
-                <div class="contenedor">
-                    <h3>Habilidades</h3>
-                    <div class="contenedor-clasificacion">
-                        <div class="clasificacion violeta">
-                            <h4>Excel</h4>
-                            <p>90%
-                            </p>
-                            <img class="icono" id="icono" src="imagenes/excel.png" width="70px" height="70px">
-                            <img class="ondas" src="imagenes/waves.png">
-                        </div>
-
-                        <div class="clasificacion celeste">
-                            <h4>SQL</h4>
-                            <p>40%
-                                
-                            </p>
-                            <img class="icono" src="imagenes/sql.png" width="70px" height="70px">
-                            <img class="ondas" src="imagenes/waves.png">
-                        </div>
-
-                        <div class="clasificacion violeta">
-                            <h4>JavaScript</h4>
-                            <p>20%
-                            </p>
-                            <img class="icono" src="imagenes/javascript.png" width="70px" height="70px">
-                            <img class="ondas" src="imagenes/waves.png">
-                        </div>
-
-                        <div class="clasificacion celeste">
-                            <h4>Python</h4>
-                            <p>70%
-                            </p>
-                            <img class="icono" src="imagenes/python.png" width="70px" height="70px">
-                            <img class="ondas" src="imagenes/waves.png">
-                        </div>
-
-
-                        <div class="clasificacion celeste">
-                            <h4>HTML</h4>
-                            <p>60%
-                            </p>
-                            <img class="icono" src="imagenes/html.png" width="70px" height="70px">
-                            <img class="ondas" src="imagenes/waves.png">
-                        </div>
-
-                        <div class="clasificacion violeta">
-                            <h4>CSS</h4>
-                            <p>70%               
-                            </p>
-                            <img class="icono" src="imagenes/css.png" width="70px" height="70px">
-                            <img class="ondas" src="imagenes/waves.png">
-                        </div>
-
-                        <div class="clasificacion celeste">
-                            <h4>PHP</h4>
-                            <p>80%
-                            </p>
-                            <img class="icono" src="imagenes/php.png" width="90px" height="60px">
-                            <img class="ondas" src="imagenes/waves.png">
-                        </div>
-
-                        <div class="clasificacion violeta">
-                            <h4>Java</h4>
-                            <p>60%
-                            </p>
-                            <img class="icono" src="imagenes/java.png" width="70px" height="70px">
-                            <img class="ondas" src="imagenes/waves.png">
-                        </div>
-
-                    </div>
                 </div>
-            </section>
-        -->
-            <section id="mis-proyectos">
-                <div class="swiper-container">
-                    <h3>Mis proyectos</h3>
-                    <div class="swiper-wrapper">                      
+            </div>                  
+        </section>
 
-                        <div class="swiper-slide">
-                            <div class="proyecto">
-                                <div class="publicacion">                                    
-                                    <div class="contenedor-proyecto-vfd"><video class="videoVFD" src="/videos/vfdL.mp4" muted autoplay loop></video></div>
-                                    <div class="contenido">
-                                    <h4>Verbs For Dummies</h4>
-                                    <p>Aplicación para prácticar los verbos en inglés hecha con Python y la biblioteca Tkinter</p>
-                                    <a href="#" target="_blank">VER MÁS →</a>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="proyecto">
-                                <div class="publicacion">
-                                    <div class="contenedor-proyecto-ipn"></div>
-                                    <div class="contenido">
-                                        <h4>Gestión de Alumnos</h4>
-                                        <p>Página web en la que se aplica un CRUD completo, así como generación de PDF's con la información, está hecho con JavaScript, PHP, HTML, CSS y utiliza MySQL como sistema de gestión de base de datos</p>
-                                        <a href="https://www.youtube.com/watch?v=M8Vdd0MSqdU&t=989s" target="_blank">VER MÁS →</a>                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="proyecto">
-                                <div class="publicacion">
-                                    <div class="contenedor-proyecto-trobify"><video class="videoTrobify" height="252px" src="/videos/trobifyL.mp4" muted autoplay loop></video></div>                                    
-                                    <div class="contenido">
-                                        <h4>Trobify</h4>
-                                        <p>Web de una inmobiliaria en la que se pueden ver los inmuebles, evaluar la hipoteca, contiene un chat y se puede subir inmuebles y administrarlos, está hecha con JavaScript, PHP, HTML, CSS y utiliza MySQL como sistema de gestión de base de datos</p>
-                                        <a href="#" target="_blank">VER MÁS →</a>                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="proyecto">
-                                <div class="publicacion">
-                                    <div class="contenedor-proyecto-KSInversiones"><video class="videoKSInversiones" height="252px" src="/videos/KSInversiones.mp4" muted autoplay loop></video></div>                                    
-                                    <div class="contenido">
-                                        <h4>KS Inversiones</h4>
-                                        <p>Página principal para una empresa de inversiones creada con HTML, CSS y JavaScript</p>
-                                        <a href="#" target="_blank">VER MÁS →</a>                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>    
-            </section>    
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-            <script>
-                var swiper = new Swiper('.swiper-container', {
-                  effect: 'coverflow',
-                  grabCursor: true,
-                  centeredSlides: true,
-                  slidesPerView: 'auto',
-                  coverflowEffect: {
-                    rotate: 0,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 2,
-                    slideShadows: true,
-                  },
-                  loop:true
-                });
-            </script>
-
-            <section id="contacto">
-                <h3>¡Que esperas!</h3>                
-                    <div class="reloj">
-                        <div class="hora">
-                            <div class="hr" id="hr"></div>
-                        </div>
-                        <div class="minuto">
-                            <div class="min" id="min"></div>
-                        </div>
-                        <div class="segundo">
-                            <div class="sec" id="sec"></div>
-                        </div>
-                    </div>
-            </section>
-            <script type="text/javascript">
-                const deg = 6;
-                const hr = document.querySelector('#hr');
-                const min = document.querySelector('#min');
-                const sec = document.querySelector('#sec');
-
-                setInterval(()=>{
-                    let day = new Date();
-                let hh = day.getHours() * 30;
-                let mm = day.getMinutes() * deg;
-                let ss = day.getSeconds() * deg;
-                
-                hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
-                min.style.transform = `rotateZ(${mm}deg)`;
-                sec.style.transform = `rotateZ(${ss}deg)`;
-                });
-            </script>
-
-        </main>
-
-        <footer>
+        <section id="proyectos">
             <div class="contenedor">
-                <div class="redes">
-                    <a href="https://www.facebook.com/Sergiertor/" target="_blank"><img src="imagenes/facebook.png"></a>
-                    <a href="https://github.com/Sergio884" target="_blank"><img src="imagenes/github.png"></a>
-                    <a href="https://www.linkedin.com/in/edilberto-sergio-valle-ortiz-1a7028209/" target="_blank"><img src="imagenes/linkedin.png"></a>
-                </div>
-                <div class="parrafo">
+                <div class="encabezado">
+                    <h2>Experiencia laboral</h2>
                     <p>
-                        © 2021 Sergio Valle. Todos los derechos reservados
+                        Cuento con más de un año de experiencia en el desarrollo de
+                        aplicaciones móviles en Android con Kotlin y Firebase,
+                        consumiendo APIs como la de Google Maps, además de 2
+                        años de experiencia como desarrollador web Full Stack,
+                        creando y posicionando proyectos para distintas empresas.
                     </p>
                 </div>
+    
+                <div class="trabajos">
+                    <div class="trabajo">
+                        <a href="https://consultoriaseprovi.com/" target="_blank"><img src="/imagenes/proyectos/seprovi.png" width="65px" alt="seprovi"></a>
+                        <div class="contenido">
+                            <h3>Seprovi</h3>
+                            <p> Desarrollé una plataforma web de cursos en línea, en la cual se pueden ver
+                                videos, realizar exámenes y de generar certificados en PDF al concluir el
+                                curso. Para este proyecto se usó <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b>, <b>PHP</b>, <b>MySQL</b> y
+                                <b>GitHub</b>.</p>
+                        </div>
+                    </div>
+    
+                    <div class="trabajo">
+                        <a href="https://fabeet.com/" target="_blank"><img src="/imagenes/proyectos/favicon@120.ico.png" width="65px" alt="fabeet"></a>
+                        <div class="contenido">
+                            <h3>fabeet</h3>
+                            <p> He trabajado como home office creando una plataforma que conecta
+                                a usuarios, permitiendo la gestión de archivos. Para este trabajo he usado
+                                <b>PHP</b> con el framework de <b>Laravel 8</b>, <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b>, <b>PostgreSQL</b>,
+                                <b>GitHub</b> y <b>Amazon Web Services</b>.</p>
+                        </div>
+                    </div>
+    
+                    <div class="trabajo">
+                        <a href="https://unemex.com/" target="_blank"><img src="/imagenes/proyectos/UNEMEX.png" width="83px" alt="SafeSOS"></a>
+                        <div class="contenido">
+                            <h3>UNEMEX</h3>
+                            <p>Colaboré en la creación de una página web con enlace a una plataforma para la Universidad de la Esencia de México
+                                (UNEMEX). Para este sito se usó <b>JavaScript</b>, <b>HTML5</b> y <b>CSS3</b>, debido a que
+                                la página es solamente informativa y visual.</p>
+                        </div>
+                    </div>
+
+                    <div class="trabajo">
+                        <a href="https://www.ipn.mx/assets/files/ccs/docs/gaceta-seleccion/2022/10/g-154-s.pdf#page=32" target="_blank"><img src="/imagenes/proyectos/safeSOS.png" width="95px" alt="SafeSOS"></a>
+                        <div class="contenido">
+                            <h3>SafeSOS</h3>
+                            <p>Aplicación en Android para que usuarios puedan ir por un recorrido de forma segura y en caso de un siniestro se envíen alertas a sus contactos de forma automática o presionando un botón de pánico. Se usó Kotlin, la API de Google Maps y Firebase.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </section>    
 
+        <section id="habilidades">
+            <div class="contenedor">
+                <div class="encabezado">
+                    <h2>Habilidades</h2>
+                    <p>Cuento con más de un año de experiencia en el desarrollo de
+                        aplicaciones móviles en Android con Kotlin y Firebase,
+                        consumiendo APIs como la de Google Maps, además de 2
+                        años de experiencia como desarrollador web Full Stack,
+                        creando y posicionando proyectos para distintas empresas.</p>
+                </div>
+                <span class="esfera"></span>
+
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="contenedor">
+                <div class="encabezado">
+                    <h2>Contacto</h2>
+                    <p>No dudes en ponerte en contacto conmigo, ya sea desde el siguiente formulario o a través de WhatsApp.</p>
+                </div>
+                <div id="formulario">
+                    <form action="https://formsubmit.co/sergiovalle884@yahoo.com" method="POST">
+                        <input type="hidden" name="_next" value="https://diseñoskarisma.com/"/>
+
+                        <input type="hidden" name="_subject" value="Sergio Valle" />
+                        <input type="hidden" name="_captcha" value="false" />
+
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Sergio Valle" required/>
+
+                        <label for="nombre">Correo electrónico:</label>
+                        <input type="email" name="Email" id="correo" placeholder="correo@gmail.com" required/>
+
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+
+                        <input type="submit" value="Enviar" />
+                    </form>
+                </div>             
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="contenedor">
+            <div class="redes">
+                <a href="https://www.facebook.com/Sergiertor/" target="_blank"><img src="imagenes/facebook.png"></a>
+                <a href="https://github.com/Sergio884" target="_blank"><img src="imagenes/github.png"></a>
+                <a href="https://www.linkedin.com/in/edilberto-sergio-valle-ortiz-1a7028209/" target="_blank"><img src="imagenes/linkedin.png"></a>
+            </div>
+            <div class="parrafo">
+                <p>
+                    © 2023 Sergio Valle. Todos los derechos reservados
+                </p>
+            </div>
         </div>
+    </footer>
 
-    
-<script>
+        <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+        <script>
+                const habilidades = [
+                    'JavaScript', 'CSS3', 'HTML5',
+                    'PHP', 'Kotlin', 'AWS',
+                    'Python', 'Java', 'Git',
+                    'PostgreSQL', 'Laravel', 'Azure',
+                    'Firebase', 'MySQL',
+                ];
 
-    $(document).ready(function(){
-    
-    $(window).scroll(function(){
-      scroll = $(window).scrollTop();
-      if (scroll > 100) {
-        $('.menu').css({"position":"fixed"});
-        $('.menu').css({"width":"100%"});
-        $('.menu').css({"top":"0"});
-        $('.menu').css({"background":"#fff"});
-        $('.menu a').css({"color":"#000"});
-        $('.logo').css({"color":"#000"});
-        $('p').css({"color":"#000"});
-        $('.menu').css({"box-shadow":"rgba(0, 0, 0, 0.22) 6px 1px 1px"});
-        $('.menu').css({"z-index":"100"});
-      } else {
-        $('.menu').css({"position":"relative"});
-        $('p').css({"color":"rgb(238, 255, 143)"});
-        $('.menu').css({"background":"rgba(255, 0, 0, 0.5)"});
-        $('.menu').css({"box-shadow":"0 0 0"});
-        $('.menu a').css({"color":"#fff"});
-        $('.logo').css({"color":"#fff"});
-      }
-    })
-    
-    $('.menu-icon').click(function(){
-      $('header nav').slideToggle();
-    })
-    
-    })
-    
-    
-    
-    </script>
+                let width = screen.width;
+                let r = 250;
+                if(width<500){
+                    r = 150;
+                }
+                var tagCloud = TagCloud('.esfera', habilidades,{                                        
+                    radius: r,
 
+                    // slow, normal, fast
+                    maxSpeed: 'slow',
+                    initSpeed: 'slow',
 
+                    direction: 120,
+                    
+                    // interact with cursor move on mouse out
+                    keep: true                
+                });
+        </script>
     </body>
 </html>

@@ -1,0 +1,187 @@
+/* Sobre mi */
+#sobre-mi{
+    overflow: hidden;
+    background: #171321;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    padding: 70px 0px;  
+}
+
+#sobre-mi .columna{
+    position: relative;
+    display: flex;
+    margin: 0 0 !important;
+    padding: 0px 0px !important;
+    width: 100%;
+    left: -30%;
+    transform: rotate(-20deg);
+}
+
+.carta-sobre-mi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta-sobre-mi .carta{
+    z-index: 1;
+    position: relative;
+    width: 650px;
+    height: 360px;
+    border-radius: 20px;
+    display: flex;
+}
+.carta .circulo{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.carta .circulo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(150px at center);
+    transition: 1.5s;
+    background: rgb(84, 2, 85);
+background: linear-gradient(0deg, #0D314A 0%, #000327 70%);
+
+}
+
+.carta:hover .circulo:before{    
+    clip-path: circle(500px at center);
+    border-radius: 30px;
+    background: rgb(84, 2, 85);
+background: linear-gradient(-45deg, #0D314A 0%, #000327 70%);
+}
+
+
+
+.carta img{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-47%);
+    height: 300px;
+    pointer-events: none;
+    transition: 1.5s;
+}
+.carta:hover img{
+    left: 75%;
+    height: 420px;
+}
+
+.carta .contenido h6{
+    color: #fff !important;
+    font-size: 19px !important;
+    font-weight: 500;       
+    margin: 0;
+}
+
+.carta .contenido{
+    position: relative;
+    width: 50%;
+    padding: 30px 30px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.carta:hover .contenido{
+    visibility: visible;
+    transition: 4s;
+    opacity: 1;
+}
+
+@media (max-width:800px){
+    .carta{
+        position: relative;
+        width: auto;
+        max-width: 450px;
+        max-height: 550px;
+        align-items: flex-start;
+        margin:10px; 
+    }
+
+    .carta-sobre-mi{
+        margin-top: 0px;
+    }
+
+    .carta:hover{
+        height:550px;
+        top: 40px;
+    }
+    .carta .contenido{
+        width: 100%;
+        left: 0;
+        top:-40px;
+        padding: 30px;
+    }
+    .carta:hover .contenido{
+        transition: 4s;
+    }
+
+    .carta .contenido h6{
+        font-size: 18px !important;
+    }
+
+    .carta img{
+        transition: 1.5s;
+        top: 60%;
+    }
+    .carta:hover img{
+        top:62%;
+        left: 50%;
+        height: 343px;
+    }
+    #sobre-mi h3{
+        margin-top: 5px;
+    }
+    .carta .circulo{
+        top: -50px !important;
+        height: 550px;
+    }   
+}
+
+@media (max-width:380px){
+    .carta .contenido h6{
+        font-size: 17px !important;
+    }
+    .carta img{
+        width: 220px;
+        transition: 1.5s;
+        top: 60%;
+    }
+    .carta:hover img{
+        top:62%;
+        left: 50%;
+        width: 240px !important;
+        height: 333px !important;        
+    }
+}
+
+@media (max-width:320px){
+    .carta .contenido h6{
+        font-size: 15px !important;
+    }
+    .carta img{
+        width: 235px !important;
+        height: 320px !important;
+        transition: 1.5s;
+        top: 60%;
+    }
+    .carta:hover img{
+        top:60%;
+        left: 50%;
+        width: 210px !important;
+        height: 290px !important;
+        
+    }
+}

@@ -1,0 +1,28 @@
+/* Footer */
+footer {
+    background:#171321;
+    text-align: center;
+    color: #fff;
+    padding: 40px 0 10px 0;
+}
+
+footer .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer img {
+    margin: 0 30px;
+    transform: rotate(0);
+    transition: 0.5s;
+}
+
+footer p {
+    color :#fff !important;
+}
+
+footer img:hover {
+    transform: rotate(360deg);
+    transition: 0.5s;
+}

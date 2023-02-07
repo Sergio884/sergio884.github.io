@@ -1,0 +1,110 @@
+#proyectos{
+    background: #0D314A;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 550px;    
+}
+
+#proyectos .contenedor{
+    margin: auto;
+}
+
+.encabezado{
+    margin: auto;
+    width: 550px;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.encabezado h2{
+    color: white;
+    margin-bottom: -10px;
+    font-size: 35px;
+}
+
+.encabezado p{
+    color: rgb(214, 214, 214);
+    font-size: 13px;
+}
+
+.trabajos{
+    margin: auto;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.trabajo{
+    margin: auto;
+    background-color: #171321;
+    width: 62%;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.trabajo img{
+    margin: auto;
+    display: flex;
+    margin-top: -50px;
+    transition: 0.6s ease-in-out;
+}
+
+.trabajo a:hover img{
+    transform: scale(1.2);
+}
+
+.trabajo .contenido{
+    margin-top: -15px;
+}
+
+.trabajo h3{
+    text-align: center;
+    font-size:22px;
+    margin-bottom: -10px;
+    color: white;
+}
+
+.trabajo p{
+    color: rgb(214, 214, 214);
+    font-size: 12px;
+    text-align: justify;
+}
+
+@media (max-width:1200px){
+    .trabajos{
+        width: 800px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 15px;
+    }
+
+    #proyectos{
+        height: 850px;    
+    }
+    
+    .trabajo{
+        width: 83%;
+    }    
+}
+
+@media (max-width:800px){
+    .trabajos{
+        width: 100%;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+
+    #proyectos{
+        height: 100%;
+        padding: 70px 0px;    
+    }
+    
+    .trabajo{
+        width: 83%;
+    }
+
+    .encabezado{
+        width: 80%;
+    }
+}

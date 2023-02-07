@@ -1,0 +1,22 @@
+.tagcloud{
+    font-size: 20px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.tagcloud--item {
+    color: #f1f1f1;
+}
+
+.tagcloud--item:hover {
+    color: #0b8500;
+}
+
+#habilidades{
+    background:#171321;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 70px 0px;  
+}
