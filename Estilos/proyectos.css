@@ -73,6 +73,13 @@
     text-align: justify;
 }
 
+.trabajo .mas{
+    color: #006f91;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
 @media (max-width:1200px){
     .trabajos{
         width: 800px;

@@ -10,6 +10,7 @@
 
 .tagcloud--item:hover {
     color: #0b8500;
+    cursor:default;
 }
 
 #habilidades{

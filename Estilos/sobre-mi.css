@@ -150,38 +150,72 @@ background: linear-gradient(-45deg, #0D314A 0%, #000327 70%);
     }   
 }
 
-@media (max-width:380px){
+@media (max-width:450px){
     .carta .contenido h6{
         font-size: 17px !important;
     }
     .carta img{
         width: 220px;
-        transition: 1.5s;
         top: 60%;
     }
     .carta:hover img{
-        top:62%;
+        top:63%;
         left: 50%;
-        width: 240px !important;
-        height: 333px !important;        
+        width: 232px !important;
+        height: 323px !important;        
     }
 }
 
-@media (max-width:320px){
+@media (max-width:381px){
     .carta .contenido h6{
         font-size: 15px !important;
     }
     .carta img{
         width: 235px !important;
         height: 320px !important;
-        transition: 1.5s;
         top: 60%;
     }
     .carta:hover img{
-        top:60%;
+        top:64%;
         left: 50%;
-        width: 210px !important;
-        height: 290px !important;
+        width: 225px !important;
+        height: 310px !important;
         
+    }
+}
+
+
+@media (max-width:331px){
+    .carta .contenido h6{
+        font-size: 15px !important;
+    }
+    .carta img{
+        width: 235px !important;
+        height: 320px !important;
+        top: 60%;
+    }
+    .carta:hover img{
+        top:65%;
+        left: 50%;
+        width: 220px !important;
+        height: 300px !important;
+        
+    }
+}
+
+@media (max-width:305px){
+    .carta .contenido h6{
+        font-size: 15px !important;
+    }
+    .carta img{
+        width: 235px !important;
+        height: 320px !important;
+        top: 60%;
+    }
+    .carta:hover img{
+        top:69%;
+        left: 50%;
+        width: 190px !important;
+        height: 250px !important;        
     }
 }
