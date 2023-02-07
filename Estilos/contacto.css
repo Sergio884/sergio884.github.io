@@ -84,7 +84,7 @@ a{
     flex-direction: column;
     margin: auto;
     margin-top: 50px;
-    width: 40%;
+    width: 90%;
     background: #171321;
     padding: 25px;
     border-radius: 8px;
@@ -173,7 +173,7 @@ form input[type="submit"]:hover{
         width: 100%;
     }
     #formulario{
-        width: 75%;
+        width: 65%;
         text-align: left !important;
     }
 }

@@ -3,7 +3,8 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    height: 550px;    
+    height: 100%;
+    padding: 70px 0px;     
 }
 
 #proyectos .contenedor{
@@ -78,10 +79,6 @@
         grid-template-columns: 1fr 1fr;
         row-gap: 15px;
     }
-
-    #proyectos{
-        height: 850px;    
-    }
     
     .trabajo{
         width: 83%;
@@ -95,13 +92,8 @@
         row-gap: 15px;
     }
 
-    #proyectos{
-        height: 100%;
-        padding: 70px 0px;    
-    }
-    
     .trabajo{
-        width: 83%;
+        width: 75%;
     }
 
     .encabezado{
